@@ -1,0 +1,15 @@
+{
+  "name": "honkit_docker",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "npx honkit serve",
+    "build": "npx honkit build",
+    "pdf": "npx honkit pdf"
+  },
+  "dependencies": {
+    "gitbook-plugin-hide-published-with": "^0.0.1",
+    "gitbook-plugin-include-csv": "^1.0.1",
+    "gitbook-plugin-uml": "^1.2.4",
+    "honkit": "^3.6.6"
+  }
+}

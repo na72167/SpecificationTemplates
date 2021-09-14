@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  doc:
+    build: .
+    restart: always
+    working_dir: /doc
+    volumes:
+      - .:/doc:cached
+      - /doc/node_modules
+    ports:
+      - "4000:4000"

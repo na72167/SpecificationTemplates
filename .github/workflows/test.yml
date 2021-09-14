@@ -1,0 +1,13 @@
+name: github pages test
+
+on:
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: build
+        run: docker-compose build && docker-compose up

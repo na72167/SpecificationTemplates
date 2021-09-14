@@ -1,0 +1,12 @@
+# Bring in the generated files (having them in .gitignore would otherwise leave them out)
+!*.svg
+!*.png
+!assets/images/
+.github/
+docker-compose.*
+Dockerfile
+package.json
+yarn.lock
+.editorconfig
+.bookignore
+.gitignore
