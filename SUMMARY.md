@@ -9,20 +9,19 @@
 ## Requirement
 <!-- 条件 -->
 <!-- 要求仕様 -->
-* [機能要求](10_requirement/test.md)
-* [非機能要求](10_requirement/test.md)
+* [機能要求](10_requirement/req_functional.md)
+* [非機能要求](10_requirement/req_non_functional.md)
 
 ## Investigation
-<!-- 調査 -->
-<!-- 調査結果 -->
-* [PDF出力](20_investigation/pdf/test.md)
+<!-- 調査や追記すべき機能関係など -->
+<!-- * [](20_investigation/test.md) -->
 
 ## Management
 <!-- 議事録 -->
-* []()
+<!-- * [](30_management/test.md) -->
 
 ## Basic Design
-<!-- 基本設計 -->
+<!-- 基本設計 【 basic design / bd】 -->
 * [システム アーキテクチャ](40_design/bd/architecture.md)
 * [インフラ アーキテクチャ](40_design/bd/infra_architecture.md)
 * [サイトマップ](40_design/bd/sitemap.md)
@@ -31,14 +30,13 @@
 ## Function Design
 
 ## Detail Design
-<!-- 詳細設計 -->
+<!-- 詳細設計 【 detail design / dd】 -->
 * [DB定義書](40_design/dd/dd_entity_layout.md)
 * [API定義書](40_design/dd/rest_api/index.md)
 * [画面設計書](40_design/dd/screen_design.md)
+* [画面遷移図](40_design/dd/screen_transition_diagram.md)
 * [ワイヤーフレーム](40_design/dd/wire_frame.md)
 
 ## Operation
-<!-- 操作関連 -->
-* [接続](50_operation/connect/connect_index.md)
-* [デプロイ方法](50_operation/deploy/deploy_index.md)
 * [Tips](50_operation/tips/tips_index.md)
+* [Memo](50_operation/memo/memo_index.md)
