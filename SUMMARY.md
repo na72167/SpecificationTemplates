@@ -9,14 +9,13 @@
 ## Requirement
 <!-- 条件 -->
 <!-- 要求仕様 -->
-* [機能要求](10_requirement/req_yamato_cwfd.md)
-* [途中の要件関係まとめ](10_requirement/req-yamato-cfwd-ph2.md)
-* [非機能要求](10_requirement/req_yamato_cwfd.md)
+* [機能要求](10_requirement/test.md)
+* [非機能要求](10_requirement/test.md)
 
 ## Investigation
 <!-- 調査 -->
 <!-- 調査結果 -->
-* [PDF出力](20_investigation/pdf/library_install.md)
+* [PDF出力](20_investigation/pdf/test.md)
 
 ## Management
 <!-- 議事録 -->
