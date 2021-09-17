@@ -33,6 +33,7 @@
 <!-- 詳細設計 【 detail design / dd】 -->
 * [DB定義書](40_design/dd/dd_entity_layout.md)
 * [API定義書](40_design/dd/rest_api/index.md)
+* [クラス定義書](40_design/dd/class/index.md)
 * [画面設計書](40_design/dd/screen_design.md)
 * [画面遷移図](40_design/dd/screen_transition_diagram.md)
 * [ワイヤーフレーム](40_design/dd/wire_frame.md)
