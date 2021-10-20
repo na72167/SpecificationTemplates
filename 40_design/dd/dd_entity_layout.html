@@ -6,7 +6,7 @@
         <title>DB定義書 · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.6.21">
+        <meta name="generator" content="HonKit 3.6.22">
         
         
         
@@ -393,6 +393,87 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="entity-layout">Entity Layout</h1>
+<!-- TOC -->
+<!-- HTMLファイルのID属性に沿って移動させている。 -->
+<ul>
+<li><a href="#db-entity-layout">Entity Layout</a><ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#transaction-tables">Transaction tables</a><ul>
+<li><a href="#torders"></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="overview">Overview</h2>
+<ul>
+<li>本ドキュメントは、DB の Entity Layout について記載する。</li>
+</ul>
+<h2 id="transaction-tables">Transaction tables</h2>
+<ul>
+<li>トランザクションテーブルのレイアウトは以下の通りとなる。</li>
+</ul>
+<h3 id="e-r-diagram">E-R diagram</h3>
+<!--  Layout settings  色や隠す関係のメソッドを設定している。 -->
+<!-- !define・・・定数内はnot nullである事を宣言している。 -->
+<!-- Table description [e-r図関係] -->
+<p><img src="../../assets/images/uml/c9bdc73612e14eb26003bf96014bb80e83ef4ee9.png"></p>
+<p><img src="../../assets/images/uml/4fb5726f0e5fc2facc0b3dd6d26065a710a71f31.png">
+company_informations</p>
+<ul>
+<li>緑はトランザクションテーブル。赤は中間テーブル。</li>
+</ul>
+<h3 id="users">users</h3>
+<ul>
+<li><p>users (ユーザー情報の管理)</p>
+</li>
+<li><p>N/A・・・該当なし</p>
+</li>
+<li>同じテーブル内でデータの出し入れがあった際にNullable or NOT NULLの判定が走っているのかを確認。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Collation</th>
+<th style="text-align:left">Nullable or NOT NULL</th>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Default</th>
+<th style="text-align:left">Extra</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">int(11)</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">NOT NULL</td>
+<td style="text-align:left">UNIQUE</td>
+<td style="text-align:left">N/A</td>
+<td style="text-align:left">auto_increment</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>デフォルトの数字など</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Value</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">管理者</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -436,7 +517,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"DB定義書","level":"7.1","depth":1,"next":{"title":"API定義書","level":"7.2","depth":1,"path":"40_design/dd/rest_api/index.md","ref":"40_design/dd/rest_api/index.md","articles":[]},"previous":{"title":"機能一覧","level":"5.4","depth":1,"path":"40_design/bd/function_list.md","ref":"40_design/bd/function_list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","uml","include-csv"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"uml":{"charset":"UTF-8","format":"png"},"hide-published-with":{},"include-csv":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"40_design/dd/dd_entity_layout.md","mtime":"2021-09-23T11:43:05.902Z","type":"markdown"},"gitbook":{"version":"3.6.21","time":"2021-09-23T11:45:24.647Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"DB定義書","level":"7.1","depth":1,"next":{"title":"API定義書","level":"7.2","depth":1,"path":"40_design/dd/rest_api/index.md","ref":"40_design/dd/rest_api/index.md","articles":[]},"previous":{"title":"機能一覧","level":"5.4","depth":1,"path":"40_design/bd/function_list.md","ref":"40_design/bd/function_list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","uml","include-csv"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"uml":{"charset":"UTF-8","format":"png"},"hide-published-with":{},"include-csv":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"40_design/dd/dd_entity_layout.md","mtime":"2021-10-20T05:30:18.981Z","type":"markdown"},"gitbook":{"version":"3.6.22","time":"2021-10-20T05:32:20.482Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
